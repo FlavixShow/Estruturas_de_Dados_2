@@ -1,2 +1,2 @@
-# Estruturas_de_Dados_2
+# ED1
 Repositório da matéria de Estruturas de Dados 2 
