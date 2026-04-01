@@ -34,6 +34,7 @@ int buscaValor(int vetor[], int valor, int inicio, int fim){
 	if(inicio == fim) return -1;
 
 	int meio = (inicio+fim)/2;
+	
 	if(valor == vetor[meio]) 
 		return meio;
 	if(valor > vetor[meio])

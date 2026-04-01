@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 
-#define QUANT 50
+#define QUANT 10
 
 void preencheArray(int vetor[]){
 	for(int i = 0; i < QUANT; i++){
@@ -17,10 +17,10 @@ void printArray(int vetor[]){
 }
 
 int somaValoresArray(int vetor[], int quant){
-	if(quant > QUANT-1){
+	if(quant-1 < 0){
 		return 0;
 	}
-	return vetor[quant] + somaValoresArray(vetor, quant+1);
+	return vetor[quant-1] + somaValoresArray(vetor, quant-1);
 }
 
 int main(){
@@ -28,6 +28,6 @@ int main(){
 	preencheArray(vetor);
 	printArray(vetor);
 	printf("\n\n");
-	printf("Soma de todos os valores: %i", somaValoresArray(vetor, 0));
+	printf("Soma de todos os valores: %i", somaValoresArray(vetor, QUANT));
 	
 }

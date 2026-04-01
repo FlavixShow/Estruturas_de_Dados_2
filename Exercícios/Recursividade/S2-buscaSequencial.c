@@ -17,9 +17,9 @@ void printArray(int vetor[]){
 }
 
 int buscaValor(int vetor[], int i, int valor){
-	if(i > QUANT-1) return -1;
+	if(!(i-1)) return -1;
 	if(vetor[i] == valor) return i;
-	return buscaValor(vetor, i+1, valor);
+	return buscaValor(vetor, i-1, valor);
 }
 
 int main(){
@@ -31,5 +31,5 @@ int main(){
 	preencheArray(vetor);
 	printArray(vetor);
 	printf("\n\n");
-	printf("Índice do valor: %i", buscaValor(vetor, 0, valor));
+	printf("Índice do valor: %i", buscaValor(vetor, QUANT, valor));
 }
