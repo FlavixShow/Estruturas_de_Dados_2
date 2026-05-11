@@ -39,7 +39,7 @@ int main(){
 			break;
 			case 7: divisa('=', 75); listarImagens(imageList); divisa('=', 75); alert("Listado.");;
 			break;
-			case 8: listarImagens(imageList); if(listarContainer(buscarImagem(imageList))) alert("Listado.");
+			case 8: listarImagens(imageList)divisa('=', 75); if(listarContainer(buscarImagem(imageList))) alert("Listado.");
 			break;
 			case 0: printf("FIM DO PROGRAMA"); return 0;
 			break;

@@ -240,6 +240,7 @@ void excluirImagem(ImageList imgL){
 	if(!img) return;
 	if(img->size){
 		alert("Imagem possui Container.");
+		return;
 	}
 	
 	if(img->ant){
